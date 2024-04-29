@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AGRIOT - WEB SERVER</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="shortcut icon" type="x-icon" href="icon/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5ed33242f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="pre-loader"></div>
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="https://i.im.ge/2024/03/26/WlA44L.logo0.png" height="150px">
+            </a>
+        </div>
+        <div class="title">WEB SERVER - ESP8266</div>
+    </header>
+
+    <div class="container_body">
+
+        <section>
+            <div class="text">
+                <h1 style="text-align:left">Olá! Este é o Agriot Web Server</h1>
+            </div>
+            <div class="text">
+                <h2>Ferramenta do grupo agriot para controle e monitoramento de sistema e infraestrutura de irrigação automática</h2>
+            </div>
+
+            <div class="container_btn">
+                <a href="control.html" class="start">
+                    Começar
+                </a>
+                <a href="https://github.com/AryFaria/AGRIOT" class="exit">
+                    <i class="fa-brands fa-github"></i>
+                    Github
+                </a>
+            </div>
+        </section>
+        <div class="image_logo">
+            <a>
+                <img class="image" src="icon/Logo.gif">
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container ">
+            <div class="col-xs-3">
+                <a href="home.html">
+                    <img src="https://i.im.ge/2024/03/26/WlA44L.logo0.png" height="150px">
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <p>© 2024 Desenvolvido pelo grupo AGRIOT.</p>
+                <p>Todos os direitos reservados ao grupo e a instituição de ensino.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        var loader = document.getElementById("pre-loader");
+
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+            }, 1500)
+        });
+    </script>
+</body>
+
+</html>

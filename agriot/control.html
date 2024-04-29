@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AGRIOT - WEB SERVER</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/control.css">
+    <link rel="shortcut icon" type="x-icon" href="icon/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d5ed33242f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="pre-loader"></div>
+
+    <header>
+        <div class="logo">
+            <a href="home.html">
+                <img src="https://i.im.ge/2024/03/26/WlA44L.logo0.png" height="150px">
+            </a>
+        </div>
+        <div class="title">WEB SERVER - ESP8266</div>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <div class="item-head">
+                <div class="title1">Humidity Sensor</div>
+                <div class="mode_state_button2">MAN</div>
+            </div>
+            
+            <div class="action-circle">
+                <div class="circle-wrap">
+                    <div class="circle">
+                        <div class="mask full">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="mask half">
+                            <div class="fill"></div>
+                        </div>
+                        <div class="inside-circle">
+                            <h4 class="percentage"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="item-head">
+                <div class="title1">Relay Module</div>
+                <a onclick="changeMode()" href="#" class="mode_state_button">
+                    <i class="fa-solid fa-robot fa-bounce fa-lg"></i>
+                </a>
+            </div>
+            
+            <div class="action">
+                <a onclick="changeRelayState()" href="#" class="relay_button">
+                    <i class="fa-solid fa-power-off fa-beat fa-2xl"></i>
+                </a>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container ">
+            <div class="col-xs-3">
+                <a href="home.html">
+                    <img src="https://i.im.ge/2024/03/26/WlA44L.logo0.png" height="150px">
+                </a>
+            </div>
+            <div class="col-xs-6">
+                <p>© 2024 Desenvolvido pelo grupo AGRIOT.</p>
+                <p>Todos os direitos reservados ao grupo e a instituição de ensino.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var loader = document.getElementById("pre-loader");
+        var circle = document.querySelector('.inside-circle');
+        circle.style.backgroundColor = "#000000";
+        var percentage = document.querySelector('.percentage');
+        percentage.style.color = "#000000";
+
+        window.addEventListener("load", function(){
+            setTimeout(function(){
+                loader.style.display = "none";
+                circle.style.backgroundColor = "#1c1e26";
+                percentage.style.color = "#21C063";
+            }, 1500)
+        });
+    </script>
+
+</body>
+
+</html>

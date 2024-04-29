@@ -1,0 +1,531 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+}
+
+
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    width: 100%;
+    max-width: 150px;
+}
+header .title{
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container,
+.container_body {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+.fa-github{
+    margin-right: 10px;
+    text-decoration: none;
+}
+.exit:hover{
+    background-color: black;
+    color: #21C063;
+}
+.start:hover{
+    background-color: #37dd7c;
+    border: 2px solid #37dd7c;
+    color: black;
+}
+
+section {
+    background-color: black;
+    padding: 20px;
+}
+
+
+section .item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .title1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-style: normal;
+}
+
+section .state {
+    padding: 3px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-style: normal;
+}
+
+.relay_state {
+    background-color: #21C063;
+    color: white;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.mode_state_button {
+    background-color: black;
+    color: #E34234;
+    border: 2px solid #E34234;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.4s;
+    display: grid;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+.mode_state_button:hover {
+    background-color: #E34234;
+    color: white;
+}
+
+.mode_state_button2 {
+    background-color: black;
+    color: black;
+    border: 2px solid black;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.4s;
+}
+
+section .action {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+section .action .relay_button{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 50%;
+    border: 5px solid #21C063;
+    color: #21C063;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.4s;
+}
+
+section .action .relay_button:hover{
+    background-color: #21C063;
+    color: white;
+}
+
+
+
+
+h1{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 0.67em;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Inconsolata';
+    font-weight: 900;
+    font-style: normal;
+}
+h2{
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 0.67em;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Inconsolata';
+    font-weight: 400;
+    font-style: normal;
+}
+.start {
+    background-color: #21C063;
+    color: white;
+    border: 2px solid #21C063;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    transition: all 0.4s;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: grid;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+}
+
+.container_btn {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.exit {
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: all 0.4s;
+    margin-top: 50px;
+    margin-left: 20px;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    font-size: 20px;
+}
+
+
+/*Regras responsividade para PC*/
+@media (min-width: 1250px){
+    header {
+          justify-content: space-between;
+          padding: 20px 60px 20px 60px;
+    }
+    h1{
+        font-size: 4em;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    .start {
+        width: 250px;
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    .exit {
+        width: 250px;
+        margin-top: 100px;
+        font-size: 25px;
+    }
+    .image{
+        margin-left: 30px;
+        height: 450px;
+        width: 300px;
+    }
+    .image_logo {
+        background-color: black;
+        padding: 20px;
+    }
+    .image_logo{
+        height: 450px;
+    }
+    .container {
+        justify-content: center;
+        padding: 60px 40px 60px 40px;
+        flex-wrap: wrap;
+    }
+    .container_body{
+        justify-content: left;
+        padding: 60px 40px 60px 40px;
+        flex-wrap: wrap;
+    }
+
+    section {
+        width: 770px;
+        margin-left: 30px;
+        height: 520px;
+        border-radius: 25px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 1;
+        padding: 100px 10px 5px 0;
+        width: 100%;
+        text-align: right;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .footer .container img{
+        margin-right: 20px;
+    }
+    .footer .container .col-xs-6 {
+        margin-top: 25px;
+    }
+    .footer .container p{
+        font-size: 12px;
+    } 
+
+    header .title{
+        font-size: 2em;
+        font-family: 'Inconsolata';
+        font-weight: 900;
+        font-style: normal;
+    }
+    body {
+        min-width: None;
+    }
+    body {
+        background-color: black;
+        background-image: url(../icon/Logo.gif);
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1250px){
+    header {
+          justify-content: space-between;
+          padding: 20px 60px 20px 60px;
+    }
+    body {
+        background-color: black;
+    }
+
+    h1{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 25px;
+    }
+    .start {
+        width: 200px;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .exit {
+        width: 200px;
+        margin-top: 60px;
+        font-size: 20px;
+    }
+    .container,
+    .container_body {
+        justify-content: center;
+        padding: 60px 40px 60px 40px;
+        flex-wrap: wrap;
+    }
+    
+    .image{
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 300px;
+        width: 250px;
+    }
+    
+    .image_logo{
+        width: 100%;
+        height: 350px;
+    }
+    .image_logo {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    section {
+        width: 70%;
+        margin: 20px;
+        height: 500px;
+        border-radius: 25px;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 1;
+        padding: 100px 10px 5px 0;
+        width: 100%;
+        text-align: right;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .footer .container img{
+        margin-right: 20px;
+    }
+    .footer .container .col-xs-6 {
+        margin-top: 25px;
+    }
+    .footer .container p{
+        font-size: 12px;
+    } 
+
+    header .title{
+        font-size: 2em;
+        font-family: 'Inconsolata';
+        font-weight: 900;
+        font-style: normal;
+    }
+    body {
+        min-width: None;
+    }
+}
+
+/*Regras responsividade para MOBILE*/
+@media (max-width: 700px){
+    header {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          padding: 30px 10px 20px 10px;
+    }
+
+    body {
+        min-width: 320px;
+        justify-content: center;
+    }
+    body {
+        background-color: black;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .image{
+        margin-left: 0px;
+        margin-top: 0px;
+        height: 250px;
+        width: 200px;
+    }
+    
+    .image_logo{
+        width: 100%;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .image_logo {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .start {
+        width: 150px;
+        margin-top: 100px;
+        font-size: 17px;
+    }
+    .exit {
+        width: 150px;
+        margin-top: 100px;
+        font-size: 17px;
+    }
+    header .title{
+        margin-top: 10px;
+        font-family: 'Inconsolata';
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .container,
+    .container_body {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    section {
+        width: 100%;
+        height: 610px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+
+    footer{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        color: white;
+        font-size: 12px;
+    }
+    
+    .footer .container .col-xs-6 {
+        margin-top: 10px;
+    }
+    .footer .container p{
+        font-size: 10px;
+    } 
+    
+    header .title{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: black;
+    padding: 1rem;
+}
+.footer .container img{
+    height:5rem;
+}
+.footer .container p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-style: normal;
+} 
+
+
+
+#pre-loader{
+    background: #000000 url(../icon/loader.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
