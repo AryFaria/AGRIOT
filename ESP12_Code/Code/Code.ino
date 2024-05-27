@@ -43,6 +43,7 @@ void setup()
 
 
   WiFi.begin();
+  delay(2000);
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
 }
 
@@ -52,7 +53,10 @@ void loop()
     systemOk();
     if (Firebase.failed())
     {
-      internetError();
+      Serial.println("Falha de conexão com o Firebase...");
+      digitalWrite(red_led, HIGH);
+      digitalWrite(green_led, HIGH);
+      digitalWrite(yellow_led, HIGH);
       return;
     }
     else
@@ -87,10 +91,6 @@ void loop()
           digitalWrite(relay_pin, LOW);
           Firebase.setInt("agriot/system/relay_value", 0);
         }
-      }
-      else
-      {
-        internetError();
       }
     }
   }
